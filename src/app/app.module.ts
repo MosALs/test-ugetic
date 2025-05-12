@@ -138,7 +138,6 @@ export function createTranslateLoader(http: HttpClient) {
       useDefaultLang: true,
       loader:{provide:TranslateLoader,useFactory:createTranslateLoader,deps:[HttpClient]}
     }),
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
 
   ],
   providers: [],

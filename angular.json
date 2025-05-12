@@ -17,7 +17,7 @@
                   "sweetalert2",
                   "aos"
                 ],
-            "outputPath": "dist/Ugetic-new/browser",
+            "outputPath": "dist/Ugetic-new",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -113,61 +113,6 @@
             ],
             "scripts": []
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/Ugetic-new/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json",
-            "externalDependencies": ["debug"] 
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "Ugetic-new:build:development",
-              "serverTarget": "Ugetic-new:server:development"
-            },
-            "production": {
-              "browserTarget": "Ugetic-new:build:production",
-              "serverTarget": "Ugetic-new:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "Ugetic-new:build:production",
-              "serverTarget": "Ugetic-new:server:production"
-            },
-            "development": {
-              "browserTarget": "Ugetic-new:build:development",
-              "serverTarget": "Ugetic-new:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
         }
       }
     }
