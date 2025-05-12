@@ -1,0 +1,94 @@
+#pop-up {
+  height: 40vh;
+  width: 100%;
+  background-image: url("../../../../assets/images/home/blogs/pop-up-bg.jpg"); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: 'bahij';
+}
+
+.access-form-container {
+    background-color: transparent;      
+    max-width: 400px;           
+    margin: 50px auto;         
+    padding: 20px;
+    border-radius: 8px;         
+  }
+  
+ 
+  .access-form {
+    display: flex;
+    flex-direction: column;
+    width: 115%;
+  }
+  
+  .access-form .form-control {
+   
+    margin-bottom: 15px;   
+    border: 1px solid #ccc;
+    border-radius: 4px;     
+    font-size: 14px;
+    outline: none;          
+    transition: border-color 0.2s ease;
+  }
+  
+  
+  .access-form .btn-submit {
+    background-color: #d3a00f;   
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+  }
+  
+ 
+
+
+  .countdown-container {
+    /* background: url('assets/images/countdown-bg.jpg') no-repeat center center; */
+    /* background-size: cover; */
+    padding: 20px;
+  }
+  
+  .countdown-box {
+    width: 70px;         
+    border-radius: 8px;  
+    text-align: center;
+    /* background-color: #143055; */
+  }
+
+  /* close btn */
+  .close-btn {
+    position: absolute;
+    /* top: 10px; */
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+  /* end of close btn */
+  
+/* responsive */
+/* @media (max-width: 500px) {
+  #pop-up{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #pop-up{
+    display: none;
+  }
+} */

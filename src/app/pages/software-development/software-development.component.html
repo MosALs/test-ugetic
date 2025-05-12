@@ -1,0 +1,69 @@
+<app-navigation-bar></app-navigation-bar>
+
+<app-header
+ class="mb-5" 
+ [headerKey]="dynamicSectionData.headerKey"
+    [rotatingTextKeys]="dynamicSectionData.rotatingTextKeys"
+    [staticTextKey]="dynamicSectionData.staticTextKey"
+    [watchButtonKey]="dynamicSectionData.watchButtonKey"
+    [downloadButtonKey]="dynamicSectionData.downloadButtonKey"
+    [imageUrl]="dynamicSectionData.imageUrl"
+ >
+</app-header>
+
+<!-- <app-side-bar></app-side-bar> -->
+<app-trusted-by class="mt-5"></app-trusted-by>
+
+<app-eom-feature1 
+  id="features"
+  [headerTextKey]="'عزز أعمالك بأنظمة إدارية ومحاسبية متكاملة'"
+  [paragraphTextKey]="'نساعدك في تصميم برامج محاسبية وإدارية متقدمة، توفر لك حلاً رقميًا متكاملاً لأتمتة العمليات وتحسين إدارة مواردك، مما يعزز كفاءة أعمالك'"
+  [cards]="featureCards"
+></app-eom-feature1>
+
+<app-featureTwoThree id="apps"  [featureTwoHeaderKey]="featureTwoData.headerKey"
+[featureTwoDescKey]="featureTwoData.descKey"
+[featureTwoItems]="featureTwoData.items"
+[featureTwoImageUrl]="featureTwoData.imageUrl"
+
+[featureThreeHeaderKey]="featureThreeData.headerKey"
+[featureThreeDescKey]="featureThreeData.descKey"
+[featureThreeItems]="featureThreeData.items"
+[featureThreeImageUrl]="featureThreeData.imageUrl">
+</app-featureTwoThree>
+
+<app-tabs [tabs]="tabsData"
+          [tabsMetadata]="tabsMetadata"
+          parentComponent="AppsComponent">
+</app-tabs>
+<app-dynamic-services-card
+
+  [title]="'خواص متطورة وسهلة الاستخدام'"
+  [desc1]="'اجعل أعمالك أكثر كفاءة مع حلول برمجية متميزة، تعزز من إدارتك المالية والإدارية'"
+  [desc2]="''"
+  
+  [card1Title]="'دعم فني سنوي للحفاظ على استقرار النظام.'"
+  [card1Desc1]="' '"
+
+  [card2Title]="'أمان متقدم لحماية البيانات'"
+  [card2Desc1]="''"
+ 
+
+  [card3Title]="''"
+  [card3Desc1]="''"
+
+></app-dynamic-services-card>
+<!-- <app-pop-up-offers></app-pop-up-offers> -->
+<app-reviews  id="reviews"></app-reviews>
+
+
+<app-home-call-to-action 
+[title]="'هل أنت مستعد للارتقاء بأعمالك؟ دعنا نصمم لك نظامًا إداريًا أو محاسبيًا متكاملًا!'"
+[button]="' تواصل معنا الآن'"
+>
+</app-home-call-to-action>
+
+  <!-- <app-dynamic-form></app-dynamic-form> -->
+<app-footer id="contact"></app-footer>
+
+

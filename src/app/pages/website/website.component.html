@@ -1,0 +1,69 @@
+<app-navigation-bar></app-navigation-bar>
+
+<app-header
+ class="mb-5" 
+ [headerKey]="dynamicSectionData.headerKey"
+    [rotatingTextKeys]="dynamicSectionData.rotatingTextKeys"
+    [staticTextKey]="dynamicSectionData.staticTextKey"
+    [watchButtonKey]="dynamicSectionData.watchButtonKey"
+    [downloadButtonKey]="dynamicSectionData.downloadButtonKey"
+    [imageUrl]="dynamicSectionData.imageUrl"
+ >
+</app-header>
+
+<!-- <app-side-bar></app-side-bar> -->
+<app-trusted-by class="mt-5"></app-trusted-by>
+
+<app-eom-feature1 
+  id="features"
+  [headerTextKey]="'عزز تواجدك الرقمي بين المنافسين وزد حصيلة عملائك'"
+  [paragraphTextKey]="'نساعدك في تصميم موقعا الكترونيا يعزز الهوية البصرية لعلامتك التجارية، يحجز  لك مكانا بين منافسيك الكترونيا، مع مزيد من العملاء المحتملين، بجانب مميزات أخرى كثيرة. '"
+  [cards]="featureCards"
+></app-eom-feature1>
+
+<app-featureTwoThree id="apps"  [featureTwoHeaderKey]="featureTwoData.headerKey"
+[featureTwoDescKey]="featureTwoData.descKey"
+[featureTwoItems]="featureTwoData.items"
+[featureTwoImageUrl]="featureTwoData.imageUrl"
+
+[featureThreeHeaderKey]="featureThreeData.headerKey"
+[featureThreeDescKey]="featureThreeData.descKey"
+[featureThreeItems]="featureThreeData.items"
+[featureThreeImageUrl]="featureThreeData.imageUrl">
+</app-featureTwoThree>
+
+<app-tabs [tabs]="tabsData"
+          [tabsMetadata]="tabsMetadata"
+          parentComponent="AppsComponent">
+</app-tabs>
+<app-dynamic-services-card
+
+  [title]="'خواص يسهل التعامل معها'"
+  [desc1]="'لا تتردد في تصميم موقع إلكتروني لشركتك، فمكاسب التي ستحصل عليها منه أكثر وأقوى من أشياء أخرى كثيرة، ومع يوجيتك يمكنك تصميم موقعا يعبر عن علامتك التجارية، ويجعلك في مقدمة المنافسين'"
+  [desc2]="''"
+  
+  [card1Title]="'نوفر لك دعم فني سنوي'"
+  [card1Desc1]="' من أجل ضمان أمان واستقرار موقعك.'"
+
+  [card2Title]="'بروتوكول SSL'"
+  [card2Desc1]="'لضمان سرية البيانات والمعلومات'"
+ 
+
+  [card3Title]="'تحليل بيانات عملائك'"
+  [card3Desc1]="'من خلال ربط موقعك بأدوات تحليل البيانات مثل CLARITY  وgoogle analytics'"
+
+></app-dynamic-services-card>
+<!-- <app-pop-up-offers></app-pop-up-offers> -->
+<app-reviews  id="reviews"></app-reviews>
+
+
+<app-home-call-to-action 
+[title]="'هل أنت جاهز للتميز؟ دعنا نصمم لك موقعًا فريدًا!'"
+[button]="'تواصل معنا'"
+>
+</app-home-call-to-action>
+
+  <!-- <app-dynamic-form></app-dynamic-form> -->
+<app-footer id="contact"></app-footer>
+
+
